@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Link Click - Vision du passé</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1 class="title">🕰️ Link Click - Vision du passé</h1>
+  <p class="intro">Choisis une photo pour entrer dans un souvenir…</p>
+
+  <div class="gallery">
+    <img src="https://i.imgur.com/kM0MaEe.jpg" alt="Photo 1" onclick="revealMemory(1)" />
+    <img src="https://i.imgur.com/jMSoIKD.jpg" alt="Photo 2" onclick="revealMemory(2)" />
+    <img src="https://i.imgur.com/gxrHDNz.jpg" alt="Photo 3" onclick="revealMemory(3)" />
+  </div>
+
+  <div class="flash" id="flash"></div>
+
+  <div id="memory" class="memory hidden">
+    <p id="memoryText"></p>
+    <button onclick="reset()">🔙 Retour</button>
+  </div>
+
+  <audio id="sound" src="https://cdn.pixabay.com/download/audio/2022/12/20/audio_68c5cd9354.mp3?filename=cinematic-suspense-123672.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
